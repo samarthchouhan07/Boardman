@@ -12,4 +12,4 @@ const PlatformLayout=({
     )
 }
 
-export default PlatformLayout
+export default PlatformLayout; 
