@@ -28,7 +28,7 @@ export default clerkMiddleware(async (auth, req) => {
   if (userId && !orgId && req.nextUrl.pathname !== '/select-org') {
     const redirectToOrgSelection = new URL('/select-org', req.url);
     return NextResponse.redirect(redirectToOrgSelection);
-  }
+  } 
 
   // Otherwise, proceed with the request
   return NextResponse.next();
